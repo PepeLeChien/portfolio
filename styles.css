@@ -118,6 +118,7 @@ main {
     width: 860px;
     color: #fff;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .project__info {
@@ -306,4 +307,25 @@ main {
 .reached__card :nth-child(2) {
     padding-right: 20px;
     text-align: end;
+}
+
+.down__sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.down__sec > a {
+    font-size: 14px !important;
+    text-decoration: none;
+    padding: 0 10px;
+    border-radius: 10px;
+    background-color: #212529;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.down__sec p {
+    padding: 0;
 }
