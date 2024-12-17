@@ -115,10 +115,11 @@ main {
 .projects article {
     display: flex; 
     flex-wrap: wrap;
-    width: 860px;
+    max-width: 860px;
     color: #fff;
     justify-content: space-between;
     margin-bottom: 50px;
+    border-bottom: 1px solid white;
 }
 
 .project__info {
@@ -328,4 +329,30 @@ main {
 
 .down__sec p {
     padding: 0;
+}
+
+@media (max-width: 768px) { 
+
+    .projects article {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project__tech ul {
+        flex-wrap: wrap;
+    }
+    .about__info .banner__media {
+        flex-direction: column;
+    }
+
+    .skills__container {
+        grid-template-columns: 1fr;
+    }
+
+    .reached__card {
+        width: 300px;
+    }
+
+    .reached__card .down__sec {
+        flex-direction: column;
+    }
 }
